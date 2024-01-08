@@ -1,0 +1,90 @@
+#bannerDiv{  
+    background: url('https://images.unsplash.com/photo-1690729127491-5a83dfb02404?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHdhbGxldCUyMHdhdGNofGVufDB8fDB8fHww') no-repeat;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 600px;
+    width: 100%;
+    text-align: center; 
+    vertical-align: middle; 
+}
+#walletimage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: example;
+    animation-duration: 6s;
+    /*animation-delay: 3s;*/
+    animation-iteration-count:5;
+
+}
+
+@keyframes example {
+    from {transform: rotateZ(45deg);
+        scale:.4;}
+    to {transform: rotateZ(0deg);
+        scale: 1;}
+  }
+
+#watchimage{
+    border-radius: 10% 20% 20% 10%;
+}
+
+#walletCard{  
+    background: url('https://images.unsplash.com/photo-1620109176813-e91290f6c795?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHdhbGxldHxlbnwwfDB8MHx8fDA%3D') no-repeat;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 250px;
+    text-align:end;
+    
+}
+#walletCard:hover{  
+    scale: 1.1;
+    transition:.5s
+    
+}
+
+
+#watchCard{  
+    background: url('https://images.unsplash.com/photo-1639006570490-79c0c53f1080?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fHdhdGNofGVufDB8MHwwfHx8MA%3D%3D') no-repeat;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 250px;
+    text-align:end;
+   
+}
+
+#watchCard:hover{  
+    scale: 1.1;
+    transition:.5s
+    
+}
+
+#sunglassCard{  
+    background: url('https://images.unsplash.com/photo-1587310311582-aa7610e90826?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHN1bmdsYXNzZXN8ZW58MHwwfDB8fHww') no-repeat;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 250px;
+    text-align:end;
+    transition:.5s
+    
+}
+
+#sunglassCard:hover{  
+    scale: 1.1;
+    transition:.5s
+    
+}
+#abouthomepagecontent{
+    background-color: rgb(48, 49, 49);
+    color: rgb(202, 200, 200);
+    
+}
+
+#abouthomepageimage{
+    background-color: rgb(66, 63, 58);
+    color: rgb(202, 200, 200);
+    opacity: .5;
+}
+#abouthomepagebanner{
+    width: 100% !important;
+}

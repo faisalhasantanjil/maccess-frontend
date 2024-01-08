@@ -1,0 +1,4 @@
+.hnav:hover{
+    scale: 1.4;
+    transition: 0.5s;
+}
