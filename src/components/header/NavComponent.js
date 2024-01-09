@@ -48,7 +48,7 @@ const NavComponent = () => {
   return (
     <div className='' style={{marginBottom:'60px', opacity:""}}>
        <Navbar color="light" light expand="lg" fixed="top" style={{opacity:'1'}}>
-          <NavbarBrand href="/">Brand</NavbarBrand>
+          <NavbarBrand href="/" style={{fontFamily:'Papyrus, Fantasy'}}>Maccess</NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" >

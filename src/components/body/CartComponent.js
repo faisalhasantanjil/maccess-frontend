@@ -46,21 +46,17 @@ const CartComponent = () => {
     
     
     const buyCart = async(e) =>{
-        e.preventDefault();
-        const formData = new FormData();
-        formData.append("cartItems", cartItems);
-        formData.append("email", email);
-        formData.append("address", address);
-        try {
-            await axios.post(
-            "https://maccess001.onrender.com/order",
-            formData,
-            { headers: {"Content-Type":"multipart/form-data"}});
-            
-            }catch (err) {
-                console.log("Errror");
-                console.log(err);
-        }
+        const the_url= 'https://maccess001.onrender.com/order'
+        fetch(the_url, { method: 'POST',headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+            cartItems:cartItems,
+            email: email,
+            address:address
+        })})
+        .then(res=> res.json())
+        .then(data=> console.log(data))
+        localStorage.clear();
+        window.location.reload(false);
 
     }
 
