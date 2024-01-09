@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { AuthContext } from '../../config/AuthProvider';
-import axios from 'axios';
+import axios from 'axios' 
+
 const CartComponent = () => {
     const [cartItems, setCartItems] = useState();
     const [orderItems, setOrderItems] =useState();
@@ -37,7 +38,7 @@ const CartComponent = () => {
 
     const viewOrder = async()=>{
         
-        const order = await axios.get('https://maccess001.onrender.com/view-order');
+        const order = await axios.get('https://maccess01.vercel.app/view-order');
         const customer_order =await order.data.order.filter((item)=>item.email === email );
         setOrderItems(customer_order)
        
@@ -46,7 +47,7 @@ const CartComponent = () => {
     
     
     const buyCart = async(e) =>{
-        const the_url= 'https://maccess001.onrender.com/order'
+        const the_url= 'https://maccess01.vercel.app/order'
         fetch(the_url, { method: 'POST',headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
             cartItems:cartItems,
