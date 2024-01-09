@@ -46,16 +46,21 @@ const CartComponent = () => {
 
     
     
-    const buyCart = async(e) =>{
-        const the_url= 'https://maccess01.vercel.app/order'
-        fetch(the_url, { method: 'POST',headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({
-            cartItems:cartItems,
+    const buyCart = () =>{
+        const the_url= 'https://maccess01.vercel.app/order';
+        axios.post(the_url, {
+            cartItems: cartItems,
             email: email,
-            address:address
-        })})
-        .then(res=> res.json())
-        .then(data=> console.log(data))
+            address: address
+        })
+        .then(response => {
+            // Handle successful response
+            console.log(response.data);
+        })
+        .catch(error => {
+            // Handle error
+            console.error(error);
+        });
         localStorage.clear();
         window.location.reload(false);
 
