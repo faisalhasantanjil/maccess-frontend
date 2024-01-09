@@ -10,7 +10,7 @@ const SunglassComponent = () => {
 
     useEffect(()=>{
         getSunglasses()
-    },[])
+    },[sunglasses])
 
     const getSunglasses= async()=>{
         const result = await axios.get('https://maccess001.onrender.com/sunglass');

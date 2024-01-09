@@ -9,7 +9,7 @@ const WalletComponent = () => {
 
     useEffect(()=>{
         getWallets()
-    },[])
+    },[wallets])
 
     const getWallets= async()=>{
         const result = await axios.get('https://maccess001.onrender.com/wallet');

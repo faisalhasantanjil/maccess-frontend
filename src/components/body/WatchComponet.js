@@ -9,7 +9,7 @@ const WatchComponet = () => {
 
     useEffect(()=>{
         getWatches()
-    },[])
+    },[watches])
 
     const getWatches= async()=>{
         
